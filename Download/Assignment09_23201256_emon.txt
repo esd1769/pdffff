@@ -1,0 +1,112 @@
+// Task01
+
+import java.util.Scanner;
+
+public class h1
+{
+
+    
+    public static int factorial(int n){
+        if (n == 0)return 1;
+
+        return n *factorial(n -1);
+    }
+
+
+
+
+
+
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n =sc.nextInt();
+
+        int x = factorial(n);
+        System.out.println(x);
+        int m =sc.nextInt();
+        x = factorial(m);
+        System.out.println(x);
+        
+        
+
+
+
+
+    }
+}
+// Task02 
+public class h2 {
+    
+    public static int power(int base, int exponent){
+
+        if (exponent ==0)return 1;
+
+
+        return base * power(base, exponent -1);
+    }
+
+
+    public static void main(String[] args){
+
+       
+int x = power(5,3);
+System.out.println(x);
+x = power(8,4);
+System.out.println(x);
+
+
+
+
+    }
+}
+// Task03
+public class h3 {
+    
+    public static void print_element(int[] arr, int index){
+
+        if(index == arr.length)return;
+        System.out.println(arr[index]);
+
+        print_element(arr,index + 1);
+    }
+
+    public static void main(String[] args)
+    {
+      
+        int[] arr = {5,6,2,1,8,7};
+int index = 2;
+print_element(arr, index);
+int[] arr1 = {13,12,19,21,31,55};
+int index1 = 0;
+print_element(arr1, index1);
+
+
+
+
+    }
+}
+// Task04
+public class h4 
+{
+    public static int fibonacci(int n){
+        if (n ==0)return 0;
+        if (n== 1)return 1;
+
+
+        return fibonacci(n- 1)+ fibonacci(n -2);
+    }
+
+    public static void main(String[] args){
+
+        
+        System.out.println(fibonacci(0));
+System.out.println(fibonacci(1));
+System.out.println(fibonacci(5));
+System.out.println(fibonacci(9));
+
+
+    }
+}
+
+
